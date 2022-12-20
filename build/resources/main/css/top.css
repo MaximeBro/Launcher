@@ -1,0 +1,7 @@
+.top-layout {
+    -fx-background: rgb(35, 40, 40);
+}
+
+.mini-btn:hover {
+    -fx-background-color: rgb(255, 255, 255, 0.2);
+}

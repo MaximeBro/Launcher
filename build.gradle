@@ -1,0 +1,106 @@
+import io.github.fvarrui.javapackager.model.HeaderType
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.github.fvarrui:javapackager:1.6.7'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'java-library'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'edu.sc.seis.launch4j' version '2.4.6'
+}
+
+apply plugin: 'io.github.fvarrui.javapackager.plugin'
+apply plugin : 'java-library'
+
+applicationDefaultJvmArgs = ["--module-path \"C:\\Users\\Maxime\\.jdks\\zulu8.66.0.15-ca-fx-jdk8.0.352-win_x64\\bin\" --add-modules javafx.controls"]
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'fr.universecorp.launcher.Main'
+        )
+    }
+}
+
+group 'fr.universecorp.launcher'
+version '1.0'
+
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://jitpack.io/'
+        name = 'JitPack'
+    }
+    maven {
+        url 'https://litarvan.github.io/maven'
+    }
+}
+
+dependencies {
+    implementation 'fr.litarvan:openauth:1+'
+    implementation 'de.jensd:fontawesomefx:8.9'
+    implementation 'fr.flowarg:flowupdater:1+'
+    implementation 'fr.flowarg:openlauncherlib:3+'
+    implementation 'com.github.oshi:oshi-core:5+'
+}
+
+mainClassName = 'fr.universecorp.launcher.Main'
+
+shadowJar {
+    classifier ''
+}
+
+application {
+    getMainClass().set('fr.universecorp.launcher.Main')
+}
+
+javapackager {
+    mainClass = 'fr.universecorp.launcher.Main'
+}
+
+launch4j {
+    headerType="gui"
+    mainClassName = 'fr.universecorp.launcher.Main'
+    outfile = "UC-Launcher.exe"
+    icon = file('C:\\Users\\Maxime\\Desktop\\launcher\\Launcher\\src\\main\\resources\\images\\icon_launcher.ico')
+    jar = file('C:\\Users\\Maxime\\.jdks\\zulu8.66.0.15-ca-fx-jdk8.0.352-win_x64\\jre')
+}
+
+task packageMyAppForWindows(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+    platform = io.github.fvarrui.javapackager.model.Platform.windows
+    createZipball = true
+    version = project.version
+    organizationName = 'UniverseCorp'
+    displayName = appName = 'UC-Launcher'
+    mainClass = 'fr.universecorp.launcher.Main'
+    generateInstaller = true
+    bundleJre = true
+    customizedJre = true
+    jrePath = file('C:\\Users\\Maxime\\.jdks\\zulu8.66.0.15-ca-fx-jdk8.0.352-win_x64\\jre')
+    winConfig {
+        headerType = HeaderType.gui
+        companyName = organizationName
+        copyright = 'UniverseCorp - All rights reserved'
+        internalName = productName = displayName
+        language = 'FRENCH'
+        productVersion = version
+        setupLanguages.put('english', 'compiler:Default.isl')
+        setupLanguages.put('french', 'compiler:Languages\\French.isl')
+        icoFile = file('C:\\Users\\Maxime\\Desktop\\launcher\\Launcher\\src\\main\\resources\\images\\icon_launcher.ico')
+    }
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}

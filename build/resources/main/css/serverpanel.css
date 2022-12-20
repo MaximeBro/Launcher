@@ -1,0 +1,109 @@
+.background {
+    -fx-background-image: url("/images/gray-bg.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.title-label {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.rad-btn {
+    -fx-min-height: 350;
+    -fx-max-height: 350;
+    -fx-min-width: 230;
+    -fx-max-width: 230;
+
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-radius: 12;
+
+    -fx-background-color: rgb(0, 0, 0, 0.2);
+    -fx-background-radius: 12;
+
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.rad-play-btn {
+    -fx-text-fill: white;
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-radius: 12;
+
+    -fx-background-color: rgb(0, 0, 0, 0.2);
+    -fx-background-radius: 12;
+
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.rad-play-btn:hover {
+    -fx-background-color: rgb(255, 255, 255, 0.7);
+    -fx-background-radius: 12;
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+
+.rad-icon {
+    -fx-min-height: 260;
+    -fx-max-height: 260;
+    -fx-min-width: 189;
+    -fx-max-width: 189;
+
+    -fx-background-image: url("/images/rad-modified.png");
+    -fx-background-size: 189 260;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat no-repeat;
+}
+
+
+
+.poke-btn {
+    -fx-min-height: 350;
+    -fx-max-height: 350;
+    -fx-min-width: 230;
+    -fx-max-width: 230;
+
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-radius: 12;
+
+    -fx-background-color: rgb(0, 0, 0, 0.2);
+    -fx-background-radius: 12;
+
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.poke-icon {
+    -fx-min-height: 266;
+    -fx-max-height: 266;
+    -fx-min-width: 186;
+    -fx-max-width: 186;
+
+    -fx-background-image: url("/images/poke.png");
+    -fx-background-size: 186 266;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat no-repeat;
+}
+
+.poke-play-btn {
+    -fx-text-fill: white;
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-radius: 12;
+
+    -fx-background-color: rgb(0, 0, 0, 0.2);
+    -fx-background-radius: 12;
+
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.poke-play-btn:hover {
+    -fx-background-color: rgb(255, 255, 255, 0.7);
+    -fx-background-radius: 12;
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

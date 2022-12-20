@@ -1,0 +1,102 @@
+.app-layout {
+    -fx-background: rgb(10, 12, 12);
+}
+
+.app-title {
+    -fx-text-fill: #3374FF;
+}
+
+.app-title-bg {
+    -fx-background-color: #A4C1FF;
+    -fx-min-height: 70;
+    -fx-max-height: 70;
+    -fx-min-width: 350;
+    -fx-max-width: 350;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #3374FF;
+}
+
+.sidemenu {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-width: 0 3 0 0;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+.bg-image {
+    -fx-background-image: url("/images/background.jpg");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+}
+
+.avatar-profile-bg {
+    -fx-min-height: 300;
+    -fx-max-height: 300;
+    -fx-min-width: 160;
+    -fx-max-width: 160;
+    -fx-background-color: #A4C1FF;
+    -fx-border-color: #3374FF;
+    -fx-border-width: 3;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.map-btn {
+    -fx-min-height: 118;
+    -fx-max-height: 118;
+    -fx-min-width: 118;
+    -fx-max-width: 118;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.home-title {
+    -fx-text-fill: rgb(20, 25, 25);
+}
+
+.sidemenu-nav-btn {
+    -fx-border-width: 0 0 0 10px;
+    -fx-background-color: transparent;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: left;
+    -fx-min-height: 60px;
+    -fx-max-height: 60px;
+    -fx-max-width: 350px;
+    -fx-border-color: transparent;
+}
+
+.sidemenu-nav-btn.button {
+    -fx-alignment: center-left;
+}
+
+.sidemenu-nav-btn:hover {
+    -fx-background-color: rgba(100, 100, 100, 0.3);
+}
+
+.sidemenu-nav-btn.active {
+    -fx-border-color: #A4C1FF;
+}
+
+.nav-content {
+    -fx-background-color: rgba(240, 240, 240, 0.4);
+}
+
+.user-pane {
+    -fx-background-color: #A4C1FF;
+}
+
+.logout-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+.logout-icon {
+    -fx-fill: white;
+}
+
+.logout-btn:hover {
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}

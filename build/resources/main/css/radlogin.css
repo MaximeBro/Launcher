@@ -1,0 +1,76 @@
+.login-layout {
+    -fx-background: rgb(10, 12, 12);
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-image: url("/images/dragon.jpg");
+    -fx-background-size: 350 690;
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-border-width: 0 7 0 0;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+.bg-image {
+    -fx-background-image: url("/images/rad-bg.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+}
+
+.modpack-label:hover {
+    -fx-effect: dropshadow(three-pass-box, white, 30, 0.5, 0.5, 0.5);
+}
+
+.login-card .login-title {
+    -fx-text-fill: white;
+}
+
+.login-card .login-input {
+    -fx-background-color: rgb(220, 225, 225);
+    -fx-font-size: 16px;
+    -fx-background-radius: 10px;
+    -fx-prompt-text-fill: rgb(150, 150, 150);
+    -fx-text-full: rgb(20, 20, 20);
+}
+
+.login-card .login-error {
+    -fx-text-fill: rgb(245, 20, 20);
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+}
+
+.login-card .login-log-btn {
+    -fx-background-radius: 10px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F5F5F5;
+    -fx-background-color: #187DF7;
+}
+
+.login-card .login-log-btn:hover {
+    -fx-background-color: rgb(20, 20, 20, 0.4);
+}
+
+.login-card .login-log-btn:disabled {
+    -fx-background-color: rgb(220, 220, 220);
+    -fx-text-fill: rgb(80, 80, 80);
+}
+
+.login-card .login-separator {
+    -fx-border-color: white;
+    -fx-border-width: 2 0 0 0 ;
+}
+
+.login-card .ms-login-btn {
+    -fx-background-color: rgb(230, 235, 235);
+}
+
+.login-card .ms-login-btn:hover {
+    -fx-background-color: rgb(220, 225, 225);
+}
+
+.login-with-label {
+    -fx-text-fill: white;
+}
