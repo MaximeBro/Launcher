@@ -3,6 +3,7 @@
 Ce projet vise à créer et distribuer un launcher personnalisé minecraft possédant plusieurs modpacks pour le serveur UniverseCorp.
 Des changements dans la structure de base du Launcher peuvent amener une redistribution de celui-ci.
 
+
 ## Librairies utilisées
 
 - [OpenAuth](https://github.com/Litarvan/OpenAuth) pour l'authentification Mojang/Microsoft
@@ -13,4 +14,10 @@ Des changements dans la structure de base du Launcher peuvent amener une redistr
 
 
 ## OS Supportés
+
 Windows • Mac • Linux (Debian, Ubuntu)
+
+
+### Aperçu du menu principal du launcher
+
+![UniverseCorp Launcher Custom](http://mc.universecorp.fr/images/uclauncher.png "Aperçu du Launcher d'UniverseCorp")
