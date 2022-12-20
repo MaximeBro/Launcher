@@ -18,6 +18,33 @@ Des changements dans la structure de base du Launcher peuvent amener une redistr
 Windows • Mac • Linux (Debian, Ubuntu)
 
 
-### Aperçu du menu principal du launcher
+## Comment utiliser ce launcher ?
+
+- Ouvrir IntelliJ et cloner le projet :
+```shell
+git clone https://github.com/MaximeBro/Launcher.git
+```
+
+
+- Build le projet pour importer toutes les librairies
+```shell
+Gradle -> Tasks -> build -> build
+```
+
+
+- Exporter le projet en .jar
+```shell
+Gradle -> Tasks -> build -> jar
+```
+
+
+- Exporter le projet en installateur windows + exécutable .msi, .jar et mac
+```shell
+Gradle -> Tasks -> javapackager -> packageMyAppForWindows
+```
+
+
+
+## Aperçu du menu principal du launcher
 
 ![UniverseCorp Launcher Custom](http://mc.universecorp.fr/images/uclauncher.png "Aperçu du Launcher d'UniverseCorp")
